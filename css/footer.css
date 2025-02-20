@@ -1,0 +1,37 @@
+:root {
+  --alice-blue: #e3f0feff;
+  --air-force-blue: #6e92b3ff;
+  --white: #ffffffff;
+  --white-2: #ffffffff;
+  --alice-blue-2: #e3efffff;
+  --true-blue: #2164caff;
+}
+
+.iconos {
+  color: var(--air-force-blue);
+}
+
+.footer {
+  background-color:var(--alice-blue);
+  color: var(--air-force-blue);
+}
+
+
+.linea{
+    height: 1px;
+    background-color:var(--air-force-blue);
+}
+
+.ios{
+  font-size: 10px;
+}
+
+.store{
+  font-size: 15px;
+}
+
+.img{
+  width: 60px;
+}
+
+
