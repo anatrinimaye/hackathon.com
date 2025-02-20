@@ -1,0 +1,161 @@
+
+@import url(./bootstrap.min.css);
+@import url(./all.min.css);
+@import url(./all.css);
+
+
+/*Contactos antes del header  */
+.cajaContactos{
+    background-color: #090349f7;
+    
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    /* contactos de la izquierda */
+    .contacts{
+        justify-content: space-between;
+        align-items: center;
+        span{
+            color: white;
+        }
+    }
+    /* redes de la derecha y el login */
+    .redesYlog{
+        justify-content: space-around;
+        align-items: center;
+        /* redes */
+        .redes{
+            justify-content: space-between;
+            a{
+                color: white;
+            }
+            a:hover{
+                background-color: rgba(255, 255, 0, 0.336);
+                color: black;
+                transition: 1s ease;
+            }
+        }
+        /* Login */
+        .login{
+            .btnLogin{
+                i{
+                    color: rgb(207, 109, 18);
+                }
+            }
+        }
+    }
+    
+}
+
+/* Hover a los elementos del header */
+.enlaces a {
+    position: relative;
+    overflow: hidden;
+  }
+  .enlaces a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 3px;
+    background-color: rgb(255, 153, 0);
+    transition: width 0.3s ease; /* Transición suave del ancho */
+  }
+  .enlaces a:hover::before{
+    width: 100%;
+  }
+
+
+.dropdown:hover{
+    border-radius: 5px;
+    background-color: rgba(170, 87, 4, 0.632);
+   a{
+    color: #000000;
+   }
+}
+
+
+/* Hamburguesa */
+.burger{
+    justify-content: end;
+}
+
+
+/* Header */
+.header{
+    /* background-color: #710a0a; */
+    height: 50px;
+    color: black;
+    font-family: cambria;
+    /* Logo */
+    .logo{
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        align-items: center;
+        span{
+            font-weight: bold;
+            color: #492503f7;;
+        }
+    }
+    /* enlaces */
+    .enlaces{
+        justify-content: space-around;
+        align-items: center;
+        /* gap: 60px; */
+    }
+    /* Buscador y Boton de cambio de tema */
+    .buscYbtncambio{
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* Cambiar de tema */
+.btncamTema{
+    height: 30px;
+    border: none;
+    background-color: #ffffff00;
+    i{
+        font-size: 25px;
+    }
+}
+body.oscuro{
+    background-color: rgb(0, 0, 0);
+    p,a,.dropdown-toggle {
+        color: white;
+    }
+    
+    i{
+        color: white;
+    }
+    
+}
+
+/* RESPONSIVE */
+@media(min-width: 0px) and (max-width:768px){
+    .cajaContactos{
+        .contacts{
+            gap: 30px;
+            span{
+                display: none;
+                
+            }
+        }
+    }
+    .burger{
+        justify-content: end;
+    }
+}
+@media(min-width: 769px) and (max-width:1180px){
+    .cajaContactos{
+        .contacts{
+            gap: 30px;
+            
+        }
+    }
+    .burger{
+        justify-content: end;
+    }
+}
