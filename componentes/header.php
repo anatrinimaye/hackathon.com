@@ -1,23 +1,11 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-</head>
-<body>
-
-
 
     <!-- Contactos antes del header -->
     <div class=" d-flex cajaContactos">
         <!-- contactos de la izquierda -->
         <div class="d-flex contacts col-lg-3">
-            <a class="nav-link" href=""><i class="fa-solid fa-phone text-warning"></i> <span>+240 222 352 345</span></a>
-            <a class="nav-link" href=""><i class="fa-solid fa-envelope text-warning"></i> <span>prueba@gmail.com</span></a>
+            <a class="nav-link" href="tel:+240222319976"><i class="fa-solid fa-phone text-warning"></i> <span>+240 222 352 345</span></a>
+            <a class="nav-link" href="mailto:prueba@gmail.com"><i class="fa-solid fa-envelope text-warning"></i> <span>prueba@gmail.com</span></a>
         </div>
         <!-- redes de la derecha y el login -->
         <div class="d-flex redesYlog col-lg-2 ">
@@ -58,7 +46,7 @@
     </div>
         
      <!-- Header -->
-    <div class="row header mt-2">
+    <div class="d-flex header mt-2">
         <!-- Logo -->
         <div class=" col-lg-3 col-md-12 d-flex logo">
             <p class="h4 pt-0"><i class="fa-solid fa-skull fs-4 "></i> <span>Dark</span> Web</p>
@@ -156,5 +144,3 @@
         document.body.classList.toggle("oscuro"); }
     </script>    
     
-</body>
-</html>
